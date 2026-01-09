@@ -24,8 +24,7 @@ filtrado_Disponiple(inventario)
 function CalcualarValorTotal (inventario) {
         let valortotal = 0
     for(let i = 0 ; i < inventario.length ; i++) {
-        let multiplicacion  = inventario[i].precio * inventario[i].stock
-        valortotal += multiplicacion
+         valortotal += inventario[i].precio * inventario[i].stock
     }
     console.log(`Precio final  del inventario  : ${valortotal}`)
 }

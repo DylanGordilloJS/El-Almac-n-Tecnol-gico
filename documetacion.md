@@ -18,5 +18,5 @@ nuetro inventrario
 
  A Filtrado   // hecho 
  B Calculo  // hecho
- C Trasformacion
+ C Trasformacion  
  D Búsqueda Crítica
