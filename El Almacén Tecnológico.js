@@ -31,4 +31,35 @@ function CalcualarValorTotal (inventario) {
 
 CalcualarValorTotal(inventario)
 
-//
+//aplicarInflacion
+
+function aplicarInflacion (inventario) {
+    let inventarioNuevo = []
+    let calcular = 0
+    for(let i = 0 ; i < inventario.length ; i++) {
+         calcular = inventario[i].precio * 1.15
+
+        inventarioNuevo.push({
+        nombre: inventario[i].nombre,
+        precioConInflacion: calcular,
+    });
+    }
+    
+    console.log(inventarioNuevo)
+}
+
+aplicarInflacion(inventario)
+
+
+
+function Busqueda (inventario , Nombre_buscar ) {
+        for (let i = 0; i < inventario.length; i++) {
+                if(inventario[i].nombre === Nombre_buscar) {
+                    console.log("Lo encontramos") 
+                    break
+                }
+        }
+}
+
+
+Busqueda(inventario , "Laptop")
